@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь - AVK Тур</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header class="clearfix">
+            <div class="header">
+                <nav>
+                    <span class="logo"><span class="logo-pink">AVK</span> ТУР</span>
+                    <ul class="menu">
+                        <li><a href="uslugi.html">ТУРЫ</a></li>
+                        <li><a href="aboutus.html">О НАС</a></li>
+                        <li><a href="clients.html">КЛИЕНТЫ</a></li>
+                        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="form-section">
+                <h1>Обратная связь</h1>
+                <form id="contact-form">
+                    <div class="form__item">
+                        <label for="topic">Тема обращения</label><br>
+                        <select id="topic" name="topic" required>
+                            <option value="">Выберите тему</option>
+                            <option value="booking">Бронирование тура</option>
+                            <option value="question">Вопрос по туру</option>
+                            <option value="complaint">Жалоба</option>
+                            <option value="suggestion">Предложение</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form__item">
+                        <label for="name">Ваше имя</label><br>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    
+                    <div class="form__item">
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                    </div>
+                    
+                    <div class="form__item">
+                        <label for="phone">Телефон</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="+7(999)999-99-99">
+                    </div>
+                    
+                    <div class="form__item">
+                        <label for="travel-date">Желаемая дата путешествия</label><br>
+                        <input type="date" id="travel-date" name="travel-date">
+                    </div>
+                    
+                    <div class="form__item">
+                        <label for="message">Текст сообщения</label><br>
+                        <textarea id="message" name="message" placeholder="Опишите ваш вопрос или пожелание..." required></textarea>
+                    </div>
+                    
+                    <div class="form__item">
+                        <input type="submit" value="Отправить">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer_block">
+            <p class="footer_left">&copy; AVK ТУР</p>
+            <p class="footer_center">Написать нам &#9650;</p>
+            <div class="footer_right">
+                <a href="https://m.ok.ru/" target="_blank"><img src="img/ok.png" alt="OK" class="footer_img"></a>
+                <a href="https://mail.ru/" target="_blank"><img src="img/mailru.png" alt="mail" class="footer_img"></a>
+                <a href="https://vk.com/"><img src="img/vk.png" alt="ВК" class="footer_img"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
